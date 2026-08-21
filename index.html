@@ -2,13 +2,17 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1, viewport-fit=cover"
     >
 
     <title>崴西西 WAICC｜影片剪輯作品集</title>
+
+    <meta
+        name="description"
+        content="崴西西的影片剪輯作品集、委託流程與即時計價器。"
+    >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +27,7 @@
 
 <body>
 
-    <!-- 開場動畫 -->
+    <!-- 開場 -->
     <div id="loader">
         <div class="loader-grid"></div>
 
@@ -41,7 +45,7 @@
             </div>
 
             <p
-                class="lang-text"
+                class="lang"
                 data-zh="正在準備剪輯世界"
                 data-en="Preparing the editing world"
             >
@@ -63,17 +67,17 @@
         </div>
     </div>
 
-    <!-- 語言切換動畫 -->
+    <!-- 語言動畫 -->
     <div id="languageTransition" class="language-transition">
         <div class="language-background"></div>
 
-        <div class="language-copy">
+        <div class="language-transition-copy">
             <strong id="languageTransitionTitle">ENGLISH</strong>
             <span id="languageTransitionText">Switching language</span>
         </div>
     </div>
 
-    <!-- 電腦滑鼠效果 -->
+    <!-- 電腦滑鼠 -->
     <div id="cursorDot" class="cursor-dot"></div>
     <div id="cursorOutline" class="cursor-outline"></div>
     <div id="cursorGlow" class="cursor-glow"></div>
@@ -86,69 +90,40 @@
         </a>
 
         <nav id="navigation" class="navigation">
-            <a
-                href="#home"
-                class="nav-link active lang-text"
-                data-zh="首頁"
-                data-en="Home"
-            >
+            <a href="#home" class="nav-link active lang" data-zh="首頁" data-en="Home">
                 首頁
             </a>
 
-            <a
-                href="#highlights"
-                class="nav-link lang-text"
-                data-zh="精華作品"
-                data-en="Highlights"
-            >
+            <a href="#works" class="nav-link lang" data-zh="精華作品" data-en="Works">
                 精華作品
             </a>
 
-            <a
-                href="#shorts"
-                class="nav-link lang-text"
-                data-zh="短影音"
-                data-en="Shorts"
-            >
+            <a href="#shorts" class="nav-link lang" data-zh="短影音" data-en="Shorts">
                 短影音
             </a>
 
-            <a
-                href="#pricing"
-                class="nav-link lang-text"
-                data-zh="定制計價"
-                data-en="Pricing"
-            >
+            <a href="#pricing" class="nav-link lang" data-zh="定制計價" data-en="Pricing">
                 定制計價
             </a>
 
-            <a
-                href="#about"
-                class="nav-link lang-text"
-                data-zh="關於我"
-                data-en="About"
-            >
+            <a href="#process" class="nav-link lang" data-zh="委託流程" data-en="Process">
+                委託流程
+            </a>
+
+            <a href="#about" class="nav-link lang" data-zh="關於我" data-en="About">
                 關於我
             </a>
         </nav>
 
         <div class="nav-actions">
-            <button
-                id="languageButton"
-                class="language-button"
-                aria-label="切換語言"
-            >
+            <button id="languageButton" class="language-button">
                 <span>中</span>
                 <i></i>
                 <span>EN</span>
             </button>
 
-            <a href="#pricing" class="commission-status">
-                <span
-                    class="lang-text"
-                    data-zh="開放委託"
-                    data-en="Available"
-                >
+            <a href="#pricing" class="available-button">
+                <span class="lang" data-zh="開放委託" data-en="Available">
                     開放委託
                 </span>
 
@@ -181,7 +156,7 @@
                     <span></span>
 
                     <p
-                        class="lang-text"
+                        class="lang"
                         data-zh="影片剪輯師・視覺創作者"
                         data-en="Video Editor・Visual Creator"
                     >
@@ -191,7 +166,7 @@
 
                 <h1 class="hero-reveal">
                     <span
-                        class="lang-text"
+                        class="lang"
                         data-zh="把每一個瞬間"
                         data-en="Turning every moment"
                     >
@@ -199,7 +174,7 @@
                     </span>
 
                     <span
-                        class="gradient-title lang-text"
+                        class="gradient-title lang"
                         data-zh="剪成值得回看的故事。"
                         data-en="into a story worth replaying."
                     >
@@ -208,7 +183,7 @@
                 </h1>
 
                 <p
-                    class="hero-description hero-reveal lang-text"
+                    class="hero-description hero-reveal lang"
                     data-zh="我是崴西西，專注於長影片精華、短影音與 Reels 剪輯。從節奏、字幕到動態效果，讓內容更有情緒、更有記憶點。"
                     data-en="I'm WaiCc, specializing in long-form highlights, shorts and Reels. From pacing and subtitles to motion effects, I make every video more memorable."
                 >
@@ -217,12 +192,8 @@
                 </p>
 
                 <div class="hero-buttons hero-reveal">
-                    <a href="#highlights" class="primary-button">
-                        <span
-                            class="lang-text"
-                            data-zh="查看作品"
-                            data-en="View Works"
-                        >
+                    <a href="#works" class="primary-button">
+                        <span class="lang" data-zh="查看作品" data-en="View Works">
                             查看作品
                         </span>
 
@@ -231,7 +202,7 @@
 
                     <a href="#pricing" class="secondary-button">
                         <span
-                            class="lang-text"
+                            class="lang"
                             data-zh="立即計算價格"
                             data-en="Calculate Price"
                         >
@@ -243,28 +214,28 @@
                 <div class="hero-stats hero-reveal">
                     <div>
                         <strong>3+</strong>
-                        <span class="lang-text" data-zh="剪輯類型" data-en="Edit Types">剪輯類型</span>
+                        <span class="lang" data-zh="剪輯類型" data-en="Edit Types">剪輯類型</span>
                     </div>
 
                     <i></i>
 
                     <div>
                         <strong>16+</strong>
-                        <span class="lang-text" data-zh="公開作品" data-en="Public Works">公開作品</span>
+                        <span class="lang" data-zh="公開作品" data-en="Public Works">公開作品</span>
                     </div>
 
                     <i></i>
 
                     <div>
                         <strong>100%</strong>
-                        <span class="lang-text" data-zh="用心製作" data-en="Crafted">用心製作</span>
+                        <span class="lang" data-zh="用心製作" data-en="Crafted">用心製作</span>
                     </div>
                 </div>
             </div>
 
             <!-- 剪輯視窗 -->
             <div id="heroVisual" class="hero-visual">
-                <div class="editing-window tilt-card">
+                <div class="editing-window">
                     <div class="editing-topbar">
                         <div class="window-dots">
                             <span></span>
@@ -272,7 +243,7 @@
                             <span></span>
                         </div>
 
-                        <p>WAICC_PROJECT</p>
+                        <small>WAICC_PROJECT</small>
                         <strong>LIVE</strong>
                     </div>
 
@@ -285,25 +256,23 @@
                             <strong>崴西西</strong>
                         </div>
 
-                        <div class="preview-time">00:01:26:18</div>
+                        <span class="preview-time">00:01:26:18</span>
                     </div>
 
                     <div class="editing-timeline">
-                        <div class="tracks">
-                            <div class="track">
-                                <span class="clip orange"></span>
-                                <span class="clip red"></span>
-                                <span class="clip yellow"></span>
-                            </div>
-
-                            <div class="track">
-                                <span class="clip purple"></span>
-                                <span class="clip blue"></span>
-                            </div>
-
-                            <div class="track audio"></div>
-                            <div class="playhead"></div>
+                        <div class="track">
+                            <span class="clip clip-orange"></span>
+                            <span class="clip clip-red"></span>
+                            <span class="clip clip-yellow"></span>
                         </div>
+
+                        <div class="track">
+                            <span class="clip clip-purple"></span>
+                            <span class="clip clip-blue"></span>
+                        </div>
+
+                        <div class="track audio-track"></div>
+                        <div class="playhead"></div>
                     </div>
                 </div>
 
@@ -313,24 +282,16 @@
         </section>
 
         <!-- 精華作品 -->
-        <section id="highlights" class="section dark-section observed-section">
-            <div class="section-number">01</div>
+        <section id="works" class="section dark-section observed-section">
+            <span class="section-number">01</span>
 
             <div class="section-heading scroll-reveal">
                 <div>
-                    <span
-                        class="section-label lang-text"
-                        data-zh="精選作品"
-                        data-en="Selected Works"
-                    >
+                    <span class="section-label lang" data-zh="精選作品" data-en="Selected Works">
                         精選作品
                     </span>
 
-                    <h2
-                        class="lang-text"
-                        data-zh="長影片精華"
-                        data-en="Long-form Highlights"
-                    >
+                    <h2 class="lang" data-zh="長影片精華" data-en="Long-form Highlights">
                         長影片精華
                     </h2>
                 </div>
@@ -341,11 +302,7 @@
                     rel="noopener noreferrer"
                     class="outline-button"
                 >
-                    <span
-                        class="lang-text"
-                        data-zh="查看所有影片"
-                        data-en="View All Videos"
-                    >
+                    <span class="lang" data-zh="查看所有影片" data-en="View All Videos">
                         查看所有影片
                     </span>
 
@@ -353,7 +310,7 @@
                 </a>
             </div>
 
-            <div class="highlight-layout scroll-reveal">
+            <div class="works-layout scroll-reveal">
                 <article class="featured-video">
                     <iframe
                         id="featuredVideo"
@@ -366,7 +323,7 @@
                     <div class="featured-information">
                         <div>
                             <span
-                                class="featured-badge lang-text"
+                                class="featured-badge lang"
                                 data-zh="最新作品"
                                 data-en="Latest Work"
                             >
@@ -390,153 +347,32 @@
                     </div>
                 </article>
 
-                <div class="video-list">
-
-                    <button
-                        class="video-item active"
-                        data-id="n0x0uFd7SGk"
-                        data-url="https://youtu.be/n0x0uFd7SGk"
-                        data-title-zh="【諾厄精華】諾嫂：我不要給你玩戰鬥陀螺了 - ft. 諾嫂"
-                        data-title-en="[Noah Highlight] No More Beyblade for You - ft. Noa's Wife"
-                    >
-                        <span class="video-number">01</span>
-
-                        <span class="video-thumbnail">
-                            <img
-                                src="https://img.youtube.com/vi/n0x0uFd7SGk/mqdefault.jpg"
-                                alt="最新精華作品"
-                            >
-
-                            <i>▶</i>
-                        </span>
-
-                        <span class="video-copy">
-                            <small class="lang-text" data-zh="最新作品" data-en="Latest Work">
-                                最新作品
-                            </small>
-
-                            <strong class="video-item-title">
-                                【諾厄精華】諾嫂：我不要給你玩戰鬥陀螺了 - ft. 諾嫂
-                            </strong>
-                        </span>
-                    </button>
-
-                    <button
-                        class="video-item"
-                        data-id="KjhfnKGLFvw"
-                        data-url="https://youtu.be/KjhfnKGLFvw"
-                        data-title-zh="我舉辦了一場直播讓觀眾大吵特吵。【諾厄精華】"
-                        data-title-en="I Hosted a Stream and Let My Viewers Argue [Noah Highlight]"
-                    >
-                        <span class="video-number">02</span>
-
-                        <span class="video-thumbnail">
-                            <img
-                                src="https://img.youtube.com/vi/KjhfnKGLFvw/mqdefault.jpg"
-                                alt="長影片精華"
-                            >
-
-                            <i>▶</i>
-                        </span>
-
-                        <span class="video-copy">
-                            <small class="lang-text" data-zh="長影片精華" data-en="Highlight">
-                                長影片精華
-                            </small>
-
-                            <strong class="video-item-title">
-                                我舉辦了一場直播讓觀眾大吵特吵。【諾厄精華】
-                            </strong>
-                        </span>
-                    </button>
-
-                    <button
-                        class="video-item"
-                        data-id="FhySJdGWa1o"
-                        data-url="https://youtu.be/FhySJdGWa1o"
-                        data-title-zh="我讓完全不認識的觀眾互相拜年?!【諾厄精華】"
-                        data-title-en="I Made Complete Strangers Greet Each Other?! [Noah Highlight]"
-                    >
-                        <span class="video-number">03</span>
-
-                        <span class="video-thumbnail">
-                            <img
-                                src="https://img.youtube.com/vi/FhySJdGWa1o/mqdefault.jpg"
-                                alt="長影片精華"
-                            >
-
-                            <i>▶</i>
-                        </span>
-
-                        <span class="video-copy">
-                            <small class="lang-text" data-zh="長影片精華" data-en="Highlight">
-                                長影片精華
-                            </small>
-
-                            <strong class="video-item-title">
-                                我讓完全不認識的觀眾互相拜年?!【諾厄精華】
-                            </strong>
-                        </span>
-                    </button>
-
-                    <button
-                        class="video-item"
-                        data-id="VZBhuMABIRs"
-                        data-url="https://youtu.be/VZBhuMABIRs"
-                        data-title-zh="新人 VTuber 應該如何做起來？【諾厄精華】"
-                        data-title-en="How Should a New VTuber Get Started? [Noah Highlight]"
-                    >
-                        <span class="video-number">04</span>
-
-                        <span class="video-thumbnail">
-                            <img
-                                src="https://img.youtube.com/vi/VZBhuMABIRs/mqdefault.jpg"
-                                alt="長影片精華"
-                            >
-
-                            <i>▶</i>
-                        </span>
-
-                        <span class="video-copy">
-                            <small class="lang-text" data-zh="長影片精華" data-en="Highlight">
-                                長影片精華
-                            </small>
-
-                            <strong class="video-item-title">
-                                新人 VTuber 應該如何做起來？【諾厄精華】
-                            </strong>
-                        </span>
-                    </button>
-                </div>
+                <div id="videoList" class="video-list"></div>
             </div>
         </section>
 
-        <!-- Shorts -->
+        <!-- 短影音 -->
         <section id="shorts" class="section shorts-section observed-section">
+            <span class="section-number">02</span>
             <div class="background-word">SHORTS</div>
-            <div class="section-number">02</div>
 
             <div class="section-heading scroll-reveal">
                 <div>
                     <span
-                        class="section-label lang-text"
+                        class="section-label lang"
                         data-zh="快速・有力・吸睛"
                         data-en="Fast・Powerful・Engaging"
                     >
                         快速・有力・吸睛
                     </span>
 
-                    <h2
-                        class="lang-text"
-                        data-zh="垂直短影音"
-                        data-en="Vertical Shorts"
-                    >
+                    <h2 class="lang" data-zh="垂直短影音" data-en="Vertical Shorts">
                         垂直短影音
                     </h2>
                 </div>
 
                 <p
-                    class="section-description lang-text"
+                    class="section-description lang"
                     data-zh="使用節奏、字幕、音效與動態效果，在最短時間內抓住觀眾。"
                     data-en="Using pacing, subtitles, sound effects and motion to capture attention instantly."
                 >
@@ -544,61 +380,12 @@
                 </p>
             </div>
 
-            <div class="shorts-grid">
-                <article class="short-card tilt-card scroll-reveal">
-                    <span class="short-number">01</span>
+            <div id="shortsGrid" class="shorts-grid"></div>
 
-                    <iframe
-                        src="https://www.youtube.com/embed/QA4eOV_HjhE?rel=0"
-                        title="短影音作品一"
-                        allowfullscreen
-                    ></iframe>
-
-                    <div class="short-footer">
-                        <span>YOUTUBE SHORTS</span>
-                        <span>↗</span>
-                    </div>
-                </article>
-
-                <article class="short-card tilt-card scroll-reveal">
-                    <span class="short-number">02</span>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/Nk4CUsrbB90?rel=0"
-                        title="短影音作品二"
-                        allowfullscreen
-                    ></iframe>
-
-                    <div class="short-footer">
-                        <span>YOUTUBE SHORTS</span>
-                        <span>↗</span>
-                    </div>
-                </article>
-
-                <article class="short-card tilt-card scroll-reveal">
-                    <span class="short-number">03</span>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/-6Euf1wwg18?rel=0"
-                        title="短影音作品三"
-                        allowfullscreen
-                    ></iframe>
-
-                    <div class="short-footer">
-                        <span>YOUTUBE SHORTS</span>
-                        <span>↗</span>
-                    </div>
-                </article>
-            </div>
-
-            <div class="mobile-swipe-tip">
+            <div class="swipe-hint">
                 <span>←</span>
 
-                <span
-                    class="lang-text"
-                    data-zh="左右滑動查看更多"
-                    data-en="Swipe to explore"
-                >
+                <span class="lang" data-zh="左右滑動查看更多" data-en="Swipe to explore">
                     左右滑動查看更多
                 </span>
 
@@ -606,71 +393,55 @@
             </div>
         </section>
 
-        <!-- 定制计价 -->
-        <section id="pricing" class="section dark-section pricing-section observed-section">
-            <div class="section-number">03</div>
+        <!-- 定制計價 -->
+        <section id="pricing" class="section dark-section observed-section">
+            <span class="section-number">03</span>
 
-            <div class="section-heading pricing-heading scroll-reveal">
+            <div class="section-heading scroll-reveal">
                 <div>
-                    <span
-                        class="section-label lang-text"
-                        data-zh="自由搭配"
-                        data-en="Build Your Package"
-                    >
+                    <span class="section-label lang" data-zh="自由搭配" data-en="Build Your Package">
                         自由搭配
                     </span>
 
-                    <h2
-                        class="lang-text"
-                        data-zh="定制你的影片"
-                        data-en="Customize Your Videos"
-                    >
+                    <h2 class="lang" data-zh="定制你的影片" data-en="Customize Your Videos">
                         定制你的影片
                     </h2>
                 </div>
 
                 <p
-                    class="section-description lang-text"
-                    data-zh="选择货币，再输入每种影片的数量与每支成片时长，系统会自动计算预估价格。"
-                    data-en="Choose a currency, then enter the quantity and duration of each video to calculate the estimate."
+                    class="section-description lang"
+                    data-zh="選擇貨幣，再設定每種影片的數量與每支成片時長，系統會立即計算預估價格。"
+                    data-en="Choose a currency, then set the quantity and duration of each video to calculate the estimate instantly."
                 >
-                    选择货币，再输入每种影片的数量与每支成片时长，系统会自动计算预估价格。
+                    選擇貨幣，再設定每種影片的數量與每支成片時長，
+                    系統會立即計算預估價格。
                 </p>
             </div>
 
-            <!-- 货币切换 -->
+            <!-- 貨幣 -->
             <div class="currency-panel scroll-reveal">
                 <div class="currency-copy">
-                    <span class="currency-icon">◎</span>
+                    <span>◎</span>
 
                     <div>
-                        <strong
-                            class="lang-text"
-                            data-zh="选择显示货币"
-                            data-en="Display Currency"
-                        >
-                            选择显示货币
+                        <strong class="lang" data-zh="選擇顯示貨幣" data-en="Display Currency">
+                            選擇顯示貨幣
                         </strong>
 
-                        <small
-                            id="exchangeRateText"
-                            class="lang-text"
-                            data-zh="主要价格与最终结算均以马币 MYR 为准"
-                            data-en="Base prices and final payment are calculated in MYR"
-                        >
-                            主要价格与最终结算均以马币 MYR 为准
+                        <small id="exchangeRateText">
+                            主要價格與最終結算均以馬幣 MYR 為準
                         </small>
                     </div>
                 </div>
 
-                <div class="currency-selector">
-                    <select id="currencySelect" aria-label="选择货币">
-                        <option value="MYR">MYR — 马币 RM</option>
-                        <option value="TWD">TWD — 台币 NT$</option>
+                <div class="currency-select">
+                    <select id="currencySelect">
+                        <option value="MYR">MYR — 馬幣 RM</option>
+                        <option value="TWD">TWD — 台幣 NT$</option>
                         <option value="USD">USD — 美元 US$</option>
-                        <option value="SGD">SGD — 新币 S$</option>
-                        <option value="CNY">CNY — 人民币 ¥</option>
-                        <option value="HKD">HKD — 港币 HK$</option>
+                        <option value="SGD">SGD — 新幣 S$</option>
+                        <option value="CNY">CNY — 人民幣 ¥</option>
+                        <option value="HKD">HKD — 港幣 HK$</option>
                     </select>
 
                     <span>⌄</span>
@@ -678,524 +449,55 @@
             </div>
 
             <div class="pricing-layout">
+                <div id="serviceList" class="service-list"></div>
 
-                <!-- 左边服务 -->
-                <div class="price-options">
-
-                    <!-- 30秒短影音 -->
-                    <article class="price-card scroll-reveal">
-                        <div class="price-card-top">
-                            <span class="service-icon">⚡</span>
-                            <span>SHORT</span>
-                        </div>
-
-                        <div class="service-copy">
-                            <h3
-                                class="lang-text"
-                                data-zh="30 秒短影音"
-                                data-en="30-sec Short"
-                            >
-                                30 秒短影音
-                            </h3>
-
-                            <p
-                                class="lang-text"
-                                data-zh="基本价格 RM30／30 秒，相等于 RM1／秒／支。"
-                                data-en="Base price RM30 per 30 seconds, equivalent to RM1 per second per video."
-                            >
-                                基本价格 RM30／30 秒，相等于 RM1／秒／支。
-                            </p>
-                        </div>
-
-                        <div class="service-price">
-                            <strong id="shortRate">RM30.00</strong>
-
-                            <span
-                                class="lang-text"
-                                data-zh="／30 秒／支"
-                                data-en="/ 30 sec / video"
-                            >
-                                ／30 秒／支
-                            </span>
-                        </div>
-
-                        <div class="custom-controls">
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="影片数量"
-                                    data-en="Quantity"
-                                >
-                                    影片数量
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="shortQuantity"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="shortQuantity"
-                                        type="number"
-                                        min="0"
-                                        max="999"
-                                        step="1"
-                                        value="0"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="shortQuantity"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="每支时长（秒）"
-                                    data-en="Duration per video (sec)"
-                                >
-                                    每支时长（秒）
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="shortDuration"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="shortDuration"
-                                        type="number"
-                                        min="1"
-                                        max="30"
-                                        step="1"
-                                        value="30"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="shortDuration"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-subtotal">
-                            <span
-                                class="lang-text"
-                                data-zh="目前小计"
-                                data-en="Current subtotal"
-                            >
-                                目前小计
-                            </span>
-
-                            <strong id="shortCardTotal">RM0.00</strong>
-                        </div>
-                    </article>
-
-                    <!-- Reels -->
-                    <article class="price-card recommended scroll-reveal">
-                        <span
-                            class="popular-label lang-text"
-                            data-zh="热门选择"
-                            data-en="Popular"
-                        >
-                            热门选择
-                        </span>
-
-                        <div class="price-card-top">
-                            <span class="service-icon">📱</span>
-                            <span>REELS</span>
-                        </div>
-
-                        <div class="service-copy">
-                            <h3
-                                class="lang-text"
-                                data-zh="Reels 短影音"
-                                data-en="Reels Video"
-                            >
-                                Reels 短影音
-                            </h3>
-
-                            <p
-                                class="lang-text"
-                                data-zh="基本价格 RM45／完成分钟／支，可自由设置数量与时长。"
-                                data-en="Base price RM45 per finished minute per video."
-                            >
-                                基本价格 RM45／完成分钟／支，可自由设置数量与时长。
-                            </p>
-                        </div>
-
-                        <div class="service-price">
-                            <strong id="reelsRate">RM45.00</strong>
-
-                            <span
-                                class="lang-text"
-                                data-zh="／分钟／支"
-                                data-en="/ min / video"
-                            >
-                                ／分钟／支
-                            </span>
-                        </div>
-
-                        <div class="custom-controls">
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="影片数量"
-                                    data-en="Quantity"
-                                >
-                                    影片数量
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="reelsQuantity"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="reelsQuantity"
-                                        type="number"
-                                        min="0"
-                                        max="999"
-                                        step="1"
-                                        value="0"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="reelsQuantity"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="每支时长（分钟）"
-                                    data-en="Duration per video (min)"
-                                >
-                                    每支时长（分钟）
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="reelsDuration"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="reelsDuration"
-                                        type="number"
-                                        min="0.5"
-                                        max="60"
-                                        step="0.5"
-                                        value="1"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="reelsDuration"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-subtotal">
-                            <span
-                                class="lang-text"
-                                data-zh="目前小计"
-                                data-en="Current subtotal"
-                            >
-                                目前小计
-                            </span>
-
-                            <strong id="reelsCardTotal">RM0.00</strong>
-                        </div>
-                    </article>
-
-                    <!-- 长影片 -->
-                    <article class="price-card scroll-reveal">
-                        <div class="price-card-top">
-                            <span class="service-icon">🎞️</span>
-                            <span>HIGHLIGHT</span>
-                        </div>
-
-                        <div class="service-copy">
-                            <h3
-                                class="lang-text"
-                                data-zh="长影片精华"
-                                data-en="Long Highlight"
-                            >
-                                长影片精华
-                            </h3>
-
-                            <p
-                                class="lang-text"
-                                data-zh="基本价格 RM40／完成分钟／支，按照最后成片长度计算。"
-                                data-en="Base price RM40 per finished minute per video."
-                            >
-                                基本价格 RM40／完成分钟／支，按照最后成片长度计算。
-                            </p>
-                        </div>
-
-                        <div class="service-price">
-                            <strong id="longRate">RM40.00</strong>
-
-                            <span
-                                class="lang-text"
-                                data-zh="／完成分钟／支"
-                                data-en="/ finished min / video"
-                            >
-                                ／完成分钟／支
-                            </span>
-                        </div>
-
-                        <div class="custom-controls">
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="影片数量"
-                                    data-en="Quantity"
-                                >
-                                    影片数量
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="longQuantity"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="longQuantity"
-                                        type="number"
-                                        min="0"
-                                        max="999"
-                                        step="1"
-                                        value="0"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="longQuantity"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="custom-control">
-                                <label
-                                    class="lang-text"
-                                    data-zh="每支成片时长（分钟）"
-                                    data-en="Duration per video (min)"
-                                >
-                                    每支成片时长（分钟）
-                                </label>
-
-                                <div class="stepper">
-                                    <button
-                                        class="step-button"
-                                        data-input="longDuration"
-                                        data-action="minus"
-                                    >
-                                        −
-                                    </button>
-
-                                    <input
-                                        id="longDuration"
-                                        type="number"
-                                        min="1"
-                                        max="600"
-                                        step="1"
-                                        value="1"
-                                    >
-
-                                    <button
-                                        class="step-button"
-                                        data-input="longDuration"
-                                        data-action="plus"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-subtotal">
-                            <span
-                                class="lang-text"
-                                data-zh="目前小计"
-                                data-en="Current subtotal"
-                            >
-                                目前小计
-                            </span>
-
-                            <strong id="longCardTotal">RM0.00</strong>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- 右边报价 -->
+                <!-- 即時價格 -->
                 <aside id="quotePanel" class="quote-panel scroll-reveal">
                     <div class="quote-heading">
                         <div>
-                            <span
-                                class="quote-label lang-text"
-                                data-zh="即时报价"
-                                data-en="Live Quote"
-                            >
-                                即时报价
+                            <span class="quote-label lang" data-zh="即時報價" data-en="Live Quote">
+                                即時報價
                             </span>
 
-                            <h3
-                                class="lang-text"
-                                data-zh="你的预估价格"
-                                data-en="Your Estimated Price"
-                            >
-                                你的预估价格
+                            <h3 class="lang" data-zh="你的預估價格" data-en="Your Estimated Price">
+                                你的預估價格
                             </h3>
                         </div>
 
                         <i></i>
                     </div>
 
-                    <div class="quote-list">
-                        <div id="shortQuote" class="quote-item">
-                            <div>
-                                <span
-                                    class="lang-text"
-                                    data-zh="30 秒短影音"
-                                    data-en="30-sec Short"
-                                >
-                                    30 秒短影音
-                                </span>
-
-                                <small id="shortCalculation">0 支 × 30 秒</small>
-                            </div>
-
-                            <strong id="shortSubtotal">RM0.00</strong>
-                        </div>
-
-                        <div id="reelsQuote" class="quote-item">
-                            <div>
-                                <span
-                                    class="lang-text"
-                                    data-zh="Reels 短影音"
-                                    data-en="Reels Video"
-                                >
-                                    Reels 短影音
-                                </span>
-
-                                <small id="reelsCalculation">0 支 × 1 分钟</small>
-                            </div>
-
-                            <strong id="reelsSubtotal">RM0.00</strong>
-                        </div>
-
-                        <div id="longQuote" class="quote-item">
-                            <div>
-                                <span
-                                    class="lang-text"
-                                    data-zh="长影片精华"
-                                    data-en="Long Highlight"
-                                >
-                                    长影片精华
-                                </span>
-
-                                <small id="longCalculation">0 支 × 1 分钟</small>
-                            </div>
-
-                            <strong id="longSubtotal">RM0.00</strong>
-                        </div>
-                    </div>
+                    <div id="quoteList" class="quote-list"></div>
 
                     <div class="quote-divider"></div>
 
                     <div class="quote-total">
                         <div>
-                            <span
-                                class="lang-text"
-                                data-zh="预估总价"
-                                data-en="Estimated Total"
-                            >
-                                预估总价
+                            <span class="lang" data-zh="預估總價" data-en="Estimated Total">
+                                預估總價
                             </span>
 
-                            <small id="selectedCurrencyName">
-                                MYR · 马币
-                            </small>
+                            <small id="currencyName">MYR · 馬幣</small>
                         </div>
 
                         <strong id="totalPrice">RM0.00</strong>
                     </div>
 
                     <div id="quoteSummary" class="quote-summary">
-                        <span
-                            class="lang-text"
-                            data-zh="尚未选择服务"
-                            data-en="No services selected"
-                        >
-                            尚未选择服务
-                        </span>
+                        <span>尚未選擇服務</span>
                     </div>
 
                     <button id="resetButton" class="reset-button">
                         <span>↻</span>
 
-                        <span
-                            class="lang-text"
-                            data-zh="清除所有选择"
-                            data-en="Reset Selection"
-                        >
-                            清除所有选择
+                        <span class="lang" data-zh="清除所有選擇" data-en="Reset Selection">
+                            清除所有選擇
                         </span>
                     </button>
 
                     <button id="copyButton" class="copy-button">
                         <span id="copyIcon">⧉</span>
-
-                        <span
-                            id="copyText"
-                            class="lang-text"
-                            data-zh="复制报价内容"
-                            data-en="Copy Quote"
-                        >
-                            复制报价内容
-                        </span>
+                        <span id="copyText">複製報價內容</span>
                     </button>
 
                     <a
@@ -1203,24 +505,20 @@
                         href="mailto:whyccz@gmail.com"
                         class="email-button"
                     >
-                        <span
-                            class="lang-text"
-                            data-zh="使用 Email 询问"
-                            data-en="Contact by Email"
-                        >
-                            使用 Email 询问
+                        <span class="lang" data-zh="使用 Email 詢問" data-en="Contact by Email">
+                            使用 Email 詢問
                         </span>
 
                         <span>↗</span>
                     </a>
 
                     <p
-                        class="quote-note lang-text"
-                        data-zh="其他货币仅为参考换算，最终价格与结算均以马币 MYR 为准。复杂动画、急件或特殊要求可能另外报价。"
-                        data-en="Other currencies are estimates only. Final pricing and payment are calculated in MYR. Complex or urgent work may require a separate quote."
+                        class="quote-note lang"
+                        data-zh="其他貨幣僅為參考換算，最終價格與結算均以馬幣 MYR 為準。複雜動畫、急件或特殊要求可能另外報價。"
+                        data-en="Other currencies are estimates only. Final pricing and payment are calculated in MYR. Complex or urgent projects may require a separate quote."
                     >
-                        其他货币仅为参考换算，最终价格与结算均以马币 MYR
-                        为准。复杂动画、急件或特殊要求可能另外报价。
+                        其他貨幣僅為參考換算，最終價格與結算均以馬幣
+                        MYR 為準。複雜動畫、急件或特殊要求可能另外報價。
                     </p>
                 </aside>
             </div>
@@ -1229,184 +527,266 @@
             <section class="payment-section scroll-reveal">
                 <div class="payment-heading">
                     <div>
-                        <span
-                            class="section-label lang-text"
-                            data-zh="付款方式"
-                            data-en="Payment Methods"
-                        >
+                        <span class="section-label lang" data-zh="付款方式" data-en="Payment Methods">
                             付款方式
                         </span>
 
-                        <h3
-                            class="lang-text"
-                            data-zh="可使用以下方式付款"
-                            data-en="Available payment methods"
-                        >
+                        <h3 class="lang" data-zh="可使用以下方式付款" data-en="Available payment methods">
                             可使用以下方式付款
                         </h3>
                     </div>
 
                     <p
-                        class="lang-text"
-                        data-zh="确认委托内容与价格后，我会提供相应的付款资料。"
+                        class="lang"
+                        data-zh="確認委託內容與價格後，我會提供相應的付款資料。"
                         data-en="Payment details will be provided after confirming the project and final price."
                     >
-                        确认委托内容与价格后，我会提供相应的付款资料。
+                        確認委託內容與價格後，我會提供相應的付款資料。
                     </p>
                 </div>
 
-                <div class="payment-grid">
-                    <article class="payment-card accepted">
-                        <span class="payment-icon">PB</span>
-
-                        <div>
-                            <strong>Public Bank</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="接受付款"
-                                data-en="Accepted"
-                            >
-                                接受付款
-                            </small>
-                        </div>
-
-                        <i>✓</i>
-                    </article>
-
-                    <article class="payment-card accepted">
-                        <span class="payment-icon">AM</span>
-
-                        <div>
-                            <strong>AmBank</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="接受付款"
-                                data-en="Accepted"
-                            >
-                                接受付款
-                            </small>
-                        </div>
-
-                        <i>✓</i>
-                    </article>
-
-                    <article class="payment-card accepted">
-                        <span class="payment-icon">支</span>
-
-                        <div>
-                            <strong>Alipay 支付宝</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="接受付款"
-                                data-en="Accepted"
-                            >
-                                接受付款
-                            </small>
-                        </div>
-
-                        <i>✓</i>
-                    </article>
-
-                    <article class="payment-card accepted">
-                        <span class="payment-icon">P</span>
-
-                        <div>
-                            <strong>PayPal</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="接受付款"
-                                data-en="Accepted"
-                            >
-                                接受付款
-                            </small>
-                        </div>
-
-                        <i>✓</i>
-                    </article>
-
-                    <article class="payment-card accepted">
-                        <span class="payment-icon">B</span>
-
-                        <div>
-                            <strong>Boost</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="接受付款"
-                                data-en="Accepted"
-                            >
-                                接受付款
-                            </small>
-                        </div>
-
-                        <i>✓</i>
-                    </article>
-
-                    <article class="payment-card unavailable">
-                        <span class="payment-icon">T</span>
-
-                        <div>
-                            <strong>Touch ’n Go eWallet</strong>
-
-                            <small
-                                class="lang-text"
-                                data-zh="暂不接受"
-                                data-en="Not accepted"
-                            >
-                                暂不接受
-                            </small>
-                        </div>
-
-                        <i>×</i>
-                    </article>
-                </div>
+                <div id="paymentGrid" class="payment-grid"></div>
             </section>
         </section>
 
-        <!-- 关于我 -->
-        <section id="about" class="section about-section observed-section">
-            <div class="section-number">04</div>
+        <!-- 委託流程 -->
+        <section id="process" class="section process-section observed-section">
+            <span class="section-number">04</span>
 
-            <div class="about-layout">
-                <div class="about-copy scroll-reveal">
-                    <span
-                        class="section-label lang-text"
-                        data-zh="关于我"
-                        data-en="About Me"
-                    >
-                        关于我
+            <div class="process-intro">
+                <div class="process-copy scroll-reveal">
+                    <span class="section-label lang" data-zh="委託須知" data-en="Commission Information">
+                        委託須知
                     </span>
 
                     <h2>
                         <span
-                            class="lang-text"
-                            data-zh="剪辑不只是把片段接起来，"
-                            data-en="Editing is more than connecting clips,"
+                            class="lang"
+                            data-zh="先了解你的內容，"
+                            data-en="Understanding your content first,"
                         >
-                            剪辑不只是把片段接起来，
+                            先了解你的內容，
                         </span>
 
                         <span
-                            class="orange-text lang-text"
-                            data-zh="而是让观众感受到故事。"
-                            data-en="it is about making people feel the story."
+                            class="orange-text lang"
+                            data-zh="再決定適合的剪輯方式。"
+                            data-en="then choosing the right editing style."
                         >
-                            而是让观众感受到故事。
+                            再決定適合的剪輯方式。
                         </span>
                     </h2>
 
                     <p
-                        class="lang-text"
-                        data-zh="我是崴西西，一名喜欢节奏、情绪与动态视觉的影片剪辑师。我会根据内容调整字幕、音效、转场与画面节奏，让每支影片保持原本的个性，同时更容易被观众记住。"
-                        data-en="I'm WaiCc, a video editor who enjoys pacing, emotion and motion visuals. I adapt subtitles, sound effects, transitions and pacing to preserve each video's identity while making it more memorable."
+                        class="lang"
+                        data-zh="我的剪輯通常會加入較多字幕演出、音效、動態特效及有趣的小巧思，整體風格會比較活潑，節奏感也會更強。你可以參考我近期的 Reels，了解大致的剪輯方向。"
+                        data-en="My editing style usually includes expressive subtitles, sound effects, motion graphics and small comedic details, creating a more energetic and fast-paced result."
                     >
-                        我是崴西西，一名喜欢节奏、情绪与动态视觉的影片剪辑师。
-                        我会根据内容调整字幕、音效、转场与画面节奏，
-                        让每支影片保持原本的个性，同时更容易被观众记住。
+                        我的剪輯通常會加入較多字幕演出、音效、動態特效及有趣的小巧思，
+                        整體風格會比較活潑，節奏感也會更強。
+                        你可以參考我近期的 Reels，了解大致的剪輯方向。
+                    </p>
+                </div>
+
+                <div class="style-grid scroll-reveal">
+                    <article class="style-card featured-style">
+                        <span class="style-icon">✦</span>
+                        <small class="lang" data-zh="效果豐富" data-en="Effect-heavy">效果豐富</small>
+                        <h3 class="lang" data-zh="節奏感剪輯" data-en="Dynamic Editing">節奏感剪輯</h3>
+
+                        <p
+                            class="lang"
+                            data-zh="包含較多字幕演出、音效、轉場、動態特效及趣味小梗，適合希望內容更有趣、更吸睛的創作者。"
+                            data-en="Includes expressive subtitles, sound effects, transitions, motion graphics and comedic details."
+                        >
+                            包含較多字幕演出、音效、轉場、動態特效及趣味小梗，
+                            適合希望內容更有趣、更吸睛的創作者。
+                        </p>
+
+                        <ul>
+                            <li class="lang" data-zh="動態字幕與文字演出" data-en="Animated subtitles">
+                                動態字幕與文字演出
+                            </li>
+
+                            <li class="lang" data-zh="音效與節奏設計" data-en="Sound and pacing design">
+                                音效與節奏設計
+                            </li>
+
+                            <li class="lang" data-zh="動態效果與趣味小梗" data-en="Motion effects and comedic details">
+                                動態效果與趣味小梗
+                            </li>
+                        </ul>
+
+                        <a
+                            href="https://www.youtube.com/@whyccz/shorts"
+                            target="_blank"
+                            class="style-link"
+                        >
+                            <span class="lang" data-zh="參考近期 Reels" data-en="View Recent Reels">
+                                參考近期 Reels
+                            </span>
+
+                            <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="style-card">
+                        <span class="style-icon">○</span>
+                        <small class="lang" data-zh="簡約乾淨" data-en="Simple & Clean">簡約乾淨</small>
+                        <h3 class="lang" data-zh="基礎剪輯" data-en="Clean Editing">基礎剪輯</h3>
+
+                        <p
+                            class="lang"
+                            data-zh="如果不需要太多字幕演出或動態效果，也可以選擇較簡單、乾淨的風格，價格會相對降低。"
+                            data-en="A simpler and cleaner editing style is also available at a lower price."
+                        >
+                            如果不需要太多字幕演出或動態效果，
+                            也可以選擇較簡單、乾淨的風格，價格會相對降低。
+                        </p>
+
+                        <ul>
+                            <li class="lang" data-zh="基礎字幕與畫面整理" data-en="Basic subtitles and cleanup">
+                                基礎字幕與畫面整理
+                            </li>
+
+                            <li class="lang" data-zh="簡單音效與轉場" data-en="Simple effects and transitions">
+                                簡單音效與轉場
+                            </li>
+
+                            <li class="lang" data-zh="減少複雜動態效果" data-en="Fewer complex motion effects">
+                                減少複雜動態效果
+                            </li>
+                        </ul>
+
+                        <a href="#pricing" class="style-link">
+                            <span class="lang" data-zh="使用計價器估算" data-en="Calculate an Estimate">
+                                使用計價器估算
+                            </span>
+
+                            <span>↑</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 素材與報價 -->
+            <div class="material-note scroll-reveal">
+                <span>i</span>
+
+                <div>
+                    <h3
+                        class="lang"
+                        data-zh="正式價格會在確認素材後提供"
+                        data-en="Final pricing is provided after reviewing the materials"
+                    >
+                        正式價格會在確認素材後提供
+                    </h3>
+
+                    <p
+                        class="lang"
+                        data-zh="VTuber 一問一答類型的影片，常見成片長度約為 1 分 25 秒至 1 分 40 秒，但實際長度仍會受到 BGM、回答內容及整體節奏影響。"
+                        data-en="VTuber Q&A videos are commonly around 1 minute 25 seconds to 1 minute 40 seconds, but the final duration depends on the BGM, answers and pacing."
+                    >
+                        VTuber 一問一答類型的影片，常見成片長度約為
+                        1 分 25 秒至 1 分 40 秒，但實際長度仍會受到
+                        BGM、回答內容及整體節奏影響。
+                    </p>
+
+                    <p
+                        class="lang"
+                        data-zh="收到 V 皮綠幕、背景、音訊、字幕內容及其他素材後，我會先確認實際內容、影片長度與效果複雜度，再提供正式報價。如果沒有指定背景，也可以交由我協助挑選。"
+                        data-en="After receiving the VTuber footage, background, audio, subtitles and other materials, I will review the duration and complexity before providing the final quote."
+                    >
+                        收到 V 皮綠幕、背景、音訊、字幕內容及其他素材後，
+                        我會先確認實際內容、影片長度與效果複雜度，再提供正式報價。
+                        如果沒有指定背景，也可以交由我協助挑選。
+                    </p>
+                </div>
+            </div>
+
+            <div class="process-heading scroll-reveal">
+                <span class="section-label lang" data-zh="製作流程" data-en="Production Process">
+                    製作流程
+                </span>
+
+                <h2
+                    class="lang"
+                    data-zh="從提交需求到正式交件"
+                    data-en="From Your Request to Final Delivery"
+                >
+                    從提交需求到正式交件
+                </h2>
+
+                <p
+                    class="lang"
+                    data-zh="每一個階段都會清楚確認，讓你可以隨時了解目前的製作進度。"
+                    data-en="Every stage will be clearly confirmed so you can follow the production progress."
+                >
+                    每一個階段都會清楚確認，讓你可以隨時了解目前的製作進度。
+                </p>
+            </div>
+
+            <div id="processTimeline" class="process-timeline"></div>
+
+            <div class="process-summary scroll-reveal">
+                <strong class="lang" data-zh="流程摘要" data-en="Process Summary">
+                    流程摘要
+                </strong>
+
+                <div class="summary-track">
+                    <span class="lang" data-zh="需求與素材" data-en="Requirements">需求與素材</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="確認報價" data-en="Confirm Quote">確認報價</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="50% 訂金" data-en="50% Deposit">50% 訂金</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="剪輯與初版" data-en="Editing">剪輯與初版</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="免費修改兩次" data-en="2 Revisions">免費修改兩次</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="50% 尾款" data-en="Final 50%">50% 尾款</span>
+                    <i>→</i>
+                    <span class="lang" data-zh="正式交件" data-en="Delivery">正式交件</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我 -->
+        <section id="about" class="section dark-section observed-section">
+            <span class="section-number">05</span>
+
+            <div class="about-layout">
+                <div class="about-copy scroll-reveal">
+                    <span class="section-label lang" data-zh="關於我" data-en="About Me">
+                        關於我
+                    </span>
+
+                    <h2>
+                        <span
+                            class="lang"
+                            data-zh="剪輯不只是把片段接起來，"
+                            data-en="Editing is more than connecting clips,"
+                        >
+                            剪輯不只是把片段接起來，
+                        </span>
+
+                        <span
+                            class="orange-text lang"
+                            data-zh="而是讓觀眾感受到故事。"
+                            data-en="it is about making people feel the story."
+                        >
+                            而是讓觀眾感受到故事。
+                        </span>
+                    </h2>
+
+                    <p
+                        class="lang"
+                        data-zh="我是崴西西，一名喜歡節奏、情緒與動態視覺的影片剪輯師。我會根據內容調整字幕、音效、轉場與畫面節奏，讓每支影片保持原本的個性，同時更容易被觀眾記住。"
+                        data-en="I'm WaiCc, a video editor who enjoys pacing, emotion and motion visuals. I adapt subtitles, sound effects, transitions and pacing to make every video more memorable."
+                    >
+                        我是崴西西，一名喜歡節奏、情緒與動態視覺的影片剪輯師。
+                        我會根據內容調整字幕、音效、轉場與畫面節奏，
+                        讓每支影片保持原本的個性，同時更容易被觀眾記住。
                     </p>
 
                     <div class="skills">
@@ -1420,15 +800,10 @@
                         <a
                             href="https://www.youtube.com/@whyccz/videos"
                             target="_blank"
-                            rel="noopener noreferrer"
                             class="primary-button"
                         >
-                            <span
-                                class="lang-text"
-                                data-zh="主要频道"
-                                data-en="Main Channel"
-                            >
-                                主要频道
+                            <span class="lang" data-zh="主要頻道" data-en="Main Channel">
+                                主要頻道
                             </span>
 
                             <span>↗</span>
@@ -1437,15 +812,14 @@
                         <a
                             href="https://www.youtube.com/@waiaaz"
                             target="_blank"
-                            rel="noopener noreferrer"
                             class="secondary-button"
                         >
                             <span
-                                class="lang-text"
-                                data-zh="另一个频道 WaiAaz"
+                                class="lang"
+                                data-zh="另一個頻道 WaiAaz"
                                 data-en="Second Channel WaiAaz"
                             >
-                                另一个频道 WaiAaz
+                                另一個頻道 WaiAaz
                             </span>
 
                             <span>↗</span>
@@ -1455,21 +829,17 @@
 
                 <div class="vlog scroll-reveal">
                     <div class="vlog-label">
-                        <span
-                            class="lang-text"
-                            data-zh="我剪辑的 VLOG"
-                            data-en="VLOG Edited by Me"
-                        >
-                            我剪辑的 VLOG
+                        <span class="lang" data-zh="我剪輯的 VLOG" data-en="VLOG Edited by Me">
+                            我剪輯的 VLOG
                         </span>
 
                         <span>PLAY ↗</span>
                     </div>
 
-                    <div class="vlog-frame tilt-card">
+                    <div class="vlog-frame">
                         <iframe
                             src="https://www.youtube.com/embed/Zc8HT6KmJqg?rel=0"
-                            title="崴西西剪辑的 Vlog"
+                            title="崴西西剪輯的 Vlog"
                             allowfullscreen
                         ></iframe>
                     </div>
@@ -1477,31 +847,28 @@
             </div>
         </section>
 
-        <!-- 联络 -->
+        <!-- 聯絡 -->
         <section class="contact-section">
             <div class="contact-content scroll-reveal">
-                <span
-                    class="section-label lang-text"
-                    data-zh="一起创作"
-                    data-en="Let's Create"
-                >
-                    一起创作
+                <span class="section-label lang" data-zh="一起創作" data-en="Let's Create">
+                    一起創作
                 </span>
 
                 <h2
-                    class="lang-text"
-                    data-zh="有想法了吗？让我们把它剪出来。"
+                    class="lang"
+                    data-zh="有想法了嗎？讓我們把它剪出來。"
                     data-en="Have an idea? Let's bring it to life."
                 >
-                    有想法了吗？让我们把它剪出来。
+                    有想法了嗎？讓我們把它剪出來。
                 </h2>
 
                 <p
-                    class="lang-text"
-                    data-zh="告诉我你的影片类型、预计长度与想要的风格，我会根据需求与你讨论。"
+                    class="lang"
+                    data-zh="告訴我你的影片類型、預計長度與想要的風格，我會根據需求與你討論。"
                     data-en="Tell me your video type, expected length and preferred style, and we can discuss the details."
                 >
-                    告诉我你的影片类型、预计长度与想要的风格，我会根据需求与你讨论。
+                    告訴我你的影片類型、預計長度與想要的風格，
+                    我會根據需求與你討論。
                 </p>
 
                 <a href="mailto:whyccz@gmail.com" class="contact-email">
@@ -1529,39 +896,31 @@
             <span>© 2026 WAICC WHYCCZ</span>
 
             <span
-                class="lang-text"
-                data-zh="影片剪辑・动态视觉・内容创作"
+                class="lang"
+                data-zh="影片剪輯・動態視覺・內容創作"
                 data-en="Video Editing・Motion Visuals・Content Creation"
             >
-                影片剪辑・动态视觉・内容创作
+                影片剪輯・動態視覺・內容創作
             </span>
         </div>
     </footer>
 
-    <!-- 手机浮动总价 -->
+    <!-- 手機浮動價格 -->
     <button id="mobileQuoteBar" class="mobile-quote-bar">
         <div>
-            <small
-                class="lang-text"
-                data-zh="预估总价"
-                data-en="Estimated Total"
-            >
-                预估总价
+            <small class="lang" data-zh="預估總價" data-en="Estimated Total">
+                預估總價
             </small>
 
             <strong id="mobileTotalPrice">RM0.00</strong>
         </div>
 
-        <span
-            class="lang-text"
-            data-zh="查看报价 ↑"
-            data-en="View quote ↑"
-        >
-            查看报价 ↑
+        <span class="lang" data-zh="查看報價 ↑" data-en="View Quote ↑">
+            查看報價 ↑
         </span>
     </button>
 
-    <!-- 跑马灯 -->
+    <!-- 跑馬燈 -->
     <div class="ticker">
         <div class="ticker-track">
             <div class="ticker-group">
@@ -1585,30 +944,23 @@
     <script>
         let currentLanguage = "zh";
         let selectedCurrency = "MYR";
-        let displayedTotal = 0;
+        let displayedMYRTotal = 0;
 
-        /*
-            参考汇率：
-            1 MYR 可以兑换多少目标货币。
-            最终交易仍以 MYR 为准。
-        */
         const currencies = {
             MYR: {
                 symbol: "RM",
                 rate: 1,
                 decimals: 2,
-                zh: "马币",
+                zh: "馬幣",
                 en: "Malaysian Ringgit"
             },
-
             TWD: {
                 symbol: "NT$",
                 rate: 7.25,
                 decimals: 0,
-                zh: "台币",
+                zh: "台幣",
                 en: "New Taiwan Dollar"
             },
-
             USD: {
                 symbol: "US$",
                 rate: 0.235,
@@ -1616,287 +968,597 @@
                 zh: "美元",
                 en: "US Dollar"
             },
-
             SGD: {
                 symbol: "S$",
                 rate: 0.302,
                 decimals: 2,
-                zh: "新币",
+                zh: "新幣",
                 en: "Singapore Dollar"
             },
-
             CNY: {
                 symbol: "¥",
                 rate: 1.69,
                 decimals: 2,
-                zh: "人民币",
+                zh: "人民幣",
                 en: "Chinese Yuan"
             },
-
             HKD: {
                 symbol: "HK$",
                 rate: 1.83,
                 decimals: 2,
-                zh: "港币",
+                zh: "港幣",
                 en: "Hong Kong Dollar"
             }
         };
 
+        const videos = [
+            {
+                id: "n0x0uFd7SGk",
+                url: "https://youtu.be/n0x0uFd7SGk",
+                zh: "【諾厄精華】諾嫂：我不要給你玩戰鬥陀螺了 - ft. 諾嫂",
+                en: "[Noah Highlight] No More Beyblade for You - ft. Noa's Wife",
+                newest: true
+            },
+            {
+                id: "KjhfnKGLFvw",
+                url: "https://youtu.be/KjhfnKGLFvw",
+                zh: "我舉辦了一場直播讓觀眾大吵特吵。【諾厄精華】",
+                en: "I Hosted a Stream and Let My Viewers Argue [Noah Highlight]"
+            },
+            {
+                id: "FhySJdGWa1o",
+                url: "https://youtu.be/FhySJdGWa1o",
+                zh: "我讓完全不認識的觀眾互相拜年?!【諾厄精華】",
+                en: "I Made Complete Strangers Greet Each Other?! [Noah Highlight]"
+            },
+            {
+                id: "VZBhuMABIRs",
+                url: "https://youtu.be/VZBhuMABIRs",
+                zh: "新人 VTuber 應該如何做起來？【諾厄精華】",
+                en: "How Should a New VTuber Get Started? [Noah Highlight]"
+            }
+        ];
+
+        const shorts = [
+            "QA4eOV_HjhE",
+            "Nk4CUsrbB90",
+            "-6Euf1wwg18"
+        ];
+
+        const services = [
+            {
+                id: "short",
+                icon: "⚡",
+                type: "SHORT",
+                zh: "30 秒短影音",
+                en: "30-sec Short",
+                descriptionZh: "基本價格 RM30／30 秒，相等於 RM1／秒／支。",
+                descriptionEn: "RM30 per 30 seconds, equivalent to RM1 per second per video.",
+                displayRate: 30,
+                unitRate: 1,
+                durationDefault: 30,
+                durationMin: 1,
+                durationMax: 30,
+                durationStep: 1,
+                durationZh: "每支時長（秒）",
+                durationEn: "Duration per video (sec)",
+                unitZh: "／30 秒／支",
+                unitEn: "/ 30 sec / video"
+            },
+            {
+                id: "reels",
+                icon: "📱",
+                type: "REELS",
+                zh: "Reels 短影音",
+                en: "Reels Video",
+                descriptionZh: "基本價格 RM45／完成分鐘／支，可自由設定數量與時長。",
+                descriptionEn: "RM45 per finished minute per video.",
+                displayRate: 45,
+                unitRate: 45,
+                durationDefault: 1,
+                durationMin: 0.5,
+                durationMax: 60,
+                durationStep: 0.5,
+                durationZh: "每支時長（分鐘）",
+                durationEn: "Duration per video (min)",
+                unitZh: "／分鐘／支",
+                unitEn: "/ min / video",
+                popular: true
+            },
+            {
+                id: "long",
+                icon: "🎞️",
+                type: "HIGHLIGHT",
+                zh: "長影片精華",
+                en: "Long Highlight",
+                descriptionZh: "基本價格 RM40／完成分鐘／支，按照最後成片長度計算。",
+                descriptionEn: "RM40 per finished minute per video.",
+                displayRate: 40,
+                unitRate: 40,
+                durationDefault: 1,
+                durationMin: 1,
+                durationMax: 600,
+                durationStep: 1,
+                durationZh: "每支成片時長（分鐘）",
+                durationEn: "Final duration per video (min)",
+                unitZh: "／完成分鐘／支",
+                unitEn: "/ finished min / video"
+            }
+        ];
+
+        const payments = [
+            { icon: "PB", name: "Public Bank", accepted: true },
+            { icon: "AM", name: "AmBank", accepted: true },
+            { icon: "支", name: "Alipay 支付寶", accepted: true },
+            { icon: "P", name: "PayPal", accepted: true },
+            { icon: "B", name: "Boost", accepted: true },
+            { icon: "T", name: "Touch ’n Go eWallet", accepted: false }
+        ];
+
+        const processSteps = [
+            {
+                icon: "✎",
+                zhTitle: "告訴我你的需求",
+                enTitle: "Tell Me Your Requirements",
+                zhText: "提供影片類型、數量、預計長度、剪輯風格、希望交件日期及參考影片。",
+                enText: "Provide the video type, quantity, expected duration, editing style, deadline and references."
+            },
+            {
+                icon: "⬆",
+                zhTitle: "整理並傳送素材",
+                enTitle: "Prepare and Send Your Files",
+                zhText: "提供原始影片、音訊、V 皮綠幕、背景、Logo、字幕內容及其他需要使用的素材。",
+                enText: "Send the raw footage, audio, VTuber footage, background, logo, subtitles and other files."
+            },
+            {
+                icon: "RM",
+                zhTitle: "確認價格與交期",
+                enTitle: "Confirm Price and Deadline",
+                zhText: "我會根據成片長度、效果數量及製作複雜度提供正式報價與預計交期。",
+                enText: "A final quote and schedule will be provided based on duration, effects and complexity."
+            },
+            {
+                icon: "50%",
+                zhTitle: "支付 50% 委託訂金",
+                enTitle: "Pay the 50% Deposit",
+                zhText: "確認委託內容後，先支付總費用的 50%。收到訂金後正式開始製作。",
+                enText: "A 50% deposit is required before production begins.",
+                featured: true
+            },
+            {
+                icon: "▶",
+                zhTitle: "剪輯並回報進度",
+                enTitle: "Editing and Progress Updates",
+                zhText: "一般短影音通常約 1～2 天完成初版；較長或效果複雜的影片會另外確認交期。",
+                enText: "A standard short video usually takes 1–2 days for the first draft. Complex projects require a separate schedule."
+            },
+            {
+                icon: "◉",
+                zhTitle: "查看影片初版",
+                enTitle: "Review the First Draft",
+                zhText: "我會先提供預覽版本，讓你確認字幕、節奏、音效、畫面及整體效果。",
+                enText: "A preview will be provided for reviewing subtitles, pacing, sound and visuals."
+            },
+            {
+                icon: "2×",
+                zhTitle: "包含兩次免費修改",
+                enTitle: "Two Free Revisions",
+                zhText: "超過修改次數、更換大量素材或大幅改變原定方向，可能需要另外收費。",
+                enText: "Additional revisions, major file replacements or direction changes may require an extra fee.",
+                featured: true
+            },
+            {
+                icon: "50%",
+                zhTitle: "支付剩餘 50% 費用",
+                enTitle: "Pay the Remaining 50%",
+                zhText: "確認影片內容與修改結果後，支付剩餘的 50% 委託費用。",
+                enText: "Pay the remaining 50% after approving the video and revisions."
+            },
+            {
+                icon: "✓",
+                zhTitle: "取得完整成片",
+                enTitle: "Receive the Final Video",
+                zhText: "收到尾款後，我會提供無浮水印的完整成片，委託正式完成。",
+                enText: "The complete video without a watermark will be delivered after final payment.",
+                completed: true
+            }
+        ];
+
         const loader = document.getElementById("loader");
         const loadingNumber = document.getElementById("loadingNumber");
         const doorTransition = document.getElementById("doorTransition");
-
-        const navbar = document.getElementById("navbar");
+        const languageTransition = document.getElementById("languageTransition");
         const navigation = document.getElementById("navigation");
         const menuButton = document.getElementById("menuButton");
-
-        const languageButton = document.getElementById("languageButton");
-        const languageTransition = document.getElementById("languageTransition");
-        const languageTransitionTitle = document.getElementById("languageTransitionTitle");
-        const languageTransitionText = document.getElementById("languageTransitionText");
-
         const currencySelect = document.getElementById("currencySelect");
-        const exchangeRateText = document.getElementById("exchangeRateText");
 
-        const totalPriceElement = document.getElementById("totalPrice");
-        const mobileTotalPrice = document.getElementById("mobileTotalPrice");
-        const mobileQuoteBar = document.getElementById("mobileQuoteBar");
-        const selectedCurrencyName = document.getElementById("selectedCurrencyName");
-        const quoteSummary = document.getElementById("quoteSummary");
+        function formatMoney(myrValue) {
+            const currency = currencies[selectedCurrency];
+            const convertedValue = myrValue * currency.rate;
 
-        const copyButton = document.getElementById("copyButton");
-        const copyIcon = document.getElementById("copyIcon");
-        const copyText = document.getElementById("copyText");
-        const resetButton = document.getElementById("resetButton");
-        const emailButton = document.getElementById("emailButton");
+            return (
+                currency.symbol +
+                convertedValue.toLocaleString("en-MY", {
+                    minimumFractionDigits: currency.decimals,
+                    maximumFractionDigits: currency.decimals
+                })
+            );
+        }
 
-        const inputs = {
-            shortQuantity: document.getElementById("shortQuantity"),
-            shortDuration: document.getElementById("shortDuration"),
-            reelsQuantity: document.getElementById("reelsQuantity"),
-            reelsDuration: document.getElementById("reelsDuration"),
-            longQuantity: document.getElementById("longQuantity"),
-            longDuration: document.getElementById("longDuration")
-        };
+        function renderVideos() {
+            document.getElementById("videoList").innerHTML = videos
+                .map((video, index) => {
+                    return `
+                        <button class="video-item ${index === 0 ? "active" : ""}" data-index="${index}">
+                            <span class="video-number">
+                                ${String(index + 1).padStart(2, "0")}
+                            </span>
 
-        /* 开场动画 */
-        window.addEventListener("load", () => {
-            let progress = 0;
+                            <span class="video-thumbnail">
+                                <img
+                                    src="https://img.youtube.com/vi/${video.id}/mqdefault.jpg"
+                                    alt="${video.zh}"
+                                >
+                                <i>▶</i>
+                            </span>
 
-            const loadingInterval = setInterval(() => {
-                progress += Math.floor(Math.random() * 11) + 4;
+                            <span class="video-copy">
+                                <small>
+                                    ${
+                                        video.newest
+                                            ? currentLanguage === "zh"
+                                                ? "最新作品"
+                                                : "Latest Work"
+                                            : currentLanguage === "zh"
+                                                ? "長影片精華"
+                                                : "Highlight"
+                                    }
+                                </small>
 
-                if (progress >= 100) {
-                    progress = 100;
-                    clearInterval(loadingInterval);
+                                <strong>${video[currentLanguage]}</strong>
+                            </span>
+                        </button>
+                    `;
+                })
+                .join("");
+
+            document.querySelectorAll(".video-item").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const video = videos[Number(button.dataset.index)];
+
+                    document.querySelectorAll(".video-item").forEach((item) => {
+                        item.classList.remove("active");
+                    });
+
+                    button.classList.add("active");
+
+                    const iframe = document.getElementById("featuredVideo");
+
+                    iframe.classList.add("changing");
 
                     setTimeout(() => {
-                        loader.classList.add("finished");
+                        iframe.src =
+                            `https://www.youtube.com/embed/${video.id}?rel=0&autoplay=1`;
 
-                        setTimeout(() => {
-                            doorTransition.classList.add("open");
-                            document.body.classList.add("page-ready");
+                        document.getElementById("featuredTitle").textContent =
+                            video[currentLanguage];
 
-                            setTimeout(() => {
-                                loader.style.display = "none";
-                                doorTransition.style.display = "none";
-                            }, 1100);
-                        }, 260);
-                    }, 250);
-                }
+                        document.getElementById("featuredLink").href =
+                            video.url;
 
-                loadingNumber.textContent = progress + "%";
-            }, 80);
-        });
-
-        /* 手机菜单 */
-        menuButton.addEventListener("click", () => {
-            const opened = navigation.classList.toggle("open");
-
-            menuButton.classList.toggle("open", opened);
-            menuButton.setAttribute("aria-expanded", String(opened));
-
-            document.body.classList.toggle("menu-open", opened);
-        });
-
-        document.querySelectorAll(".nav-link").forEach((link) => {
-            link.addEventListener("click", () => {
-                navigation.classList.remove("open");
-                menuButton.classList.remove("open");
-                menuButton.setAttribute("aria-expanded", "false");
-                document.body.classList.remove("menu-open");
-            });
-        });
-
-        /* 语言切换 */
-        languageButton.addEventListener("click", () => {
-            const nextLanguage = currentLanguage === "zh" ? "en" : "zh";
-
-            languageTransitionTitle.textContent =
-                nextLanguage === "en" ? "ENGLISH" : "繁體中文";
-
-            languageTransitionText.textContent =
-                nextLanguage === "en"
-                    ? "Switching language"
-                    : "正在切换语言";
-
-            languageTransition.classList.add("active");
-
-            setTimeout(() => {
-                currentLanguage = nextLanguage;
-                updateLanguage();
-            }, 420);
-
-            setTimeout(() => {
-                languageTransition.classList.remove("active");
-            }, 1200);
-        });
-
-        function updateLanguage() {
-            document.documentElement.lang =
-                currentLanguage === "zh" ? "zh-Hant" : "en";
-
-            document.querySelectorAll(".lang-text").forEach((element) => {
-                const value = element.dataset[currentLanguage];
-
-                if (value) {
-                    element.innerHTML = value;
-                }
-            });
-
-            updateVideoLanguage();
-            updateExchangeText();
-            updateCalculator(false);
-        }
-
-        /* 作品列表 */
-        const featuredVideo = document.getElementById("featuredVideo");
-        const featuredTitle = document.getElementById("featuredTitle");
-        const featuredLink = document.getElementById("featuredLink");
-
-        document.querySelectorAll(".video-item").forEach((item) => {
-            item.addEventListener("click", () => {
-                document.querySelectorAll(".video-item").forEach((button) => {
-                    button.classList.remove("active");
+                        iframe.classList.remove("changing");
+                    }, 220);
                 });
-
-                item.classList.add("active");
-                featuredVideo.classList.add("changing");
-
-                setTimeout(() => {
-                    featuredVideo.src =
-                        "https://www.youtube.com/embed/" +
-                        item.dataset.id +
-                        "?rel=0&autoplay=1";
-
-                    featuredTitle.textContent =
-                        currentLanguage === "zh"
-                            ? item.dataset.titleZh
-                            : item.dataset.titleEn;
-
-                    featuredLink.href = item.dataset.url;
-                    featuredVideo.classList.remove("changing");
-                }, 220);
             });
-        });
-
-        function updateVideoLanguage() {
-            document.querySelectorAll(".video-item").forEach((item) => {
-                item.querySelector(".video-item-title").textContent =
-                    currentLanguage === "zh"
-                        ? item.dataset.titleZh
-                        : item.dataset.titleEn;
-            });
-
-            const activeItem = document.querySelector(".video-item.active");
-
-            if (activeItem) {
-                featuredTitle.textContent =
-                    currentLanguage === "zh"
-                        ? activeItem.dataset.titleZh
-                        : activeItem.dataset.titleEn;
-            }
         }
 
-        /* 货币切换 */
-        currencySelect.addEventListener("change", () => {
-            selectedCurrency = currencySelect.value;
+        function renderShorts() {
+            document.getElementById("shortsGrid").innerHTML = shorts
+                .map((id, index) => {
+                    return `
+                        <article class="short-card scroll-reveal">
+                            <span class="short-number">
+                                ${String(index + 1).padStart(2, "0")}
+                            </span>
 
-            document
-                .querySelector(".currency-panel")
-                .classList.add("currency-changing");
+                            <iframe
+                                src="https://www.youtube.com/embed/${id}?rel=0"
+                                title="Shorts ${index + 1}"
+                                allowfullscreen
+                            ></iframe>
 
-            setTimeout(() => {
-                updateExchangeText();
-                updateCalculator(false);
-
-                document
-                    .querySelector(".currency-panel")
-                    .classList.remove("currency-changing");
-            }, 180);
-        });
-
-        function updateExchangeText() {
-            const currency = currencies[selectedCurrency];
-
-            if (selectedCurrency === "MYR") {
-                exchangeRateText.textContent =
-                    currentLanguage === "zh"
-                        ? "主要价格与最终结算均以马币 MYR 为准"
-                        : "Base prices and final payment are calculated in MYR";
-            } else {
-                exchangeRateText.textContent =
-                    currentLanguage === "zh"
-                        ? "参考汇率：RM1 ≈ " +
-                          currency.symbol +
-                          formatRaw(currency.rate, currency.decimals) +
-                          "｜最终以 MYR 结算"
-                        : "Reference rate: RM1 ≈ " +
-                          currency.symbol +
-                          formatRaw(currency.rate, currency.decimals) +
-                          " | Final payment in MYR";
-            }
-
-            selectedCurrencyName.textContent =
-                selectedCurrency +
-                " · " +
-                currency[currentLanguage];
+                            <div class="short-footer">
+                                <span>YOUTUBE SHORTS</span>
+                                <span>↗</span>
+                            </div>
+                        </article>
+                    `;
+                })
+                .join("");
         }
 
-        /* 数字控制 */
-        document.querySelectorAll(".step-button").forEach((button) => {
-            button.addEventListener("click", () => {
-                const input = document.getElementById(button.dataset.input);
-                const step = Number(input.step) || 1;
-                let value = Number(input.value) || 0;
+        function getSavedInputs() {
+            const saved = {};
 
-                if (button.dataset.action === "plus") {
-                    value += step;
-                } else {
-                    value -= step;
-                }
+            services.forEach((service) => {
+                const quantity =
+                    document.getElementById(service.id + "Quantity");
 
-                input.value = value;
-                clampInput(input);
+                const duration =
+                    document.getElementById(service.id + "Duration");
 
-                input.classList.remove("input-pop");
-                void input.offsetWidth;
-                input.classList.add("input-pop");
-
-                updateCalculator();
-            });
-        });
-
-        Object.values(inputs).forEach((input) => {
-            input.addEventListener("input", () => {
-                updateCalculator();
+                saved[service.id] = {
+                    quantity: quantity ? quantity.value : 0,
+                    duration: duration
+                        ? duration.value
+                        : service.durationDefault
+                };
             });
 
-            input.addEventListener("blur", () => {
-                clampInput(input);
-                updateCalculator();
+            return saved;
+        }
+
+        function renderServices() {
+            const saved = getSavedInputs();
+
+            document.getElementById("serviceList").innerHTML = services
+                .map((service) => {
+                    return `
+                        <article class="service-card ${service.popular ? "recommended" : ""}">
+                            ${
+                                service.popular
+                                    ? `<span class="popular-label">
+                                        ${currentLanguage === "zh" ? "熱門選擇" : "Popular"}
+                                    </span>`
+                                    : ""
+                            }
+
+                            <div class="service-top">
+                                <span class="service-icon">${service.icon}</span>
+                                <span>${service.type}</span>
+                            </div>
+
+                            <div class="service-copy">
+                                <h3>${service[currentLanguage]}</h3>
+
+                                <p>
+                                    ${
+                                        currentLanguage === "zh"
+                                            ? service.descriptionZh
+                                            : service.descriptionEn
+                                    }
+                                </p>
+                            </div>
+
+                            <div class="service-price">
+                                <strong id="${service.id}Rate">
+                                    ${formatMoney(service.displayRate)}
+                                </strong>
+
+                                <span>
+                                    ${
+                                        currentLanguage === "zh"
+                                            ? service.unitZh
+                                            : service.unitEn
+                                    }
+                                </span>
+                            </div>
+
+                            <div class="service-controls">
+                                <div class="control-group">
+                                    <label>
+                                        ${currentLanguage === "zh" ? "影片數量" : "Quantity"}
+                                    </label>
+
+                                    <div class="stepper">
+                                        <button
+                                            data-input="${service.id}Quantity"
+                                            data-action="minus"
+                                        >
+                                            −
+                                        </button>
+
+                                        <input
+                                            id="${service.id}Quantity"
+                                            type="number"
+                                            min="0"
+                                            max="999"
+                                            step="1"
+                                            value="${saved[service.id].quantity}"
+                                        >
+
+                                        <button
+                                            data-input="${service.id}Quantity"
+                                            data-action="plus"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>
+                                        ${
+                                            currentLanguage === "zh"
+                                                ? service.durationZh
+                                                : service.durationEn
+                                        }
+                                    </label>
+
+                                    <div class="stepper">
+                                        <button
+                                            data-input="${service.id}Duration"
+                                            data-action="minus"
+                                        >
+                                            −
+                                        </button>
+
+                                        <input
+                                            id="${service.id}Duration"
+                                            type="number"
+                                            min="${service.durationMin}"
+                                            max="${service.durationMax}"
+                                            step="${service.durationStep}"
+                                            value="${saved[service.id].duration}"
+                                        >
+
+                                        <button
+                                            data-input="${service.id}Duration"
+                                            data-action="plus"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-total">
+                                <span>
+                                    ${currentLanguage === "zh" ? "目前小計" : "Current Subtotal"}
+                                </span>
+
+                                <strong id="${service.id}CardTotal">
+                                    ${formatMoney(0)}
+                                </strong>
+                            </div>
+                        </article>
+                    `;
+                })
+                .join("");
+
+            document.getElementById("quoteList").innerHTML = services
+                .map((service) => {
+                    return `
+                        <div id="${service.id}Quote" class="quote-item">
+                            <div>
+                                <span>${service[currentLanguage]}</span>
+                                <small id="${service.id}Calculation"></small>
+                            </div>
+
+                            <strong id="${service.id}Subtotal">
+                                ${formatMoney(0)}
+                            </strong>
+                        </div>
+                    `;
+                })
+                .join("");
+
+            bindCalculator();
+        }
+
+        function renderPayments() {
+            document.getElementById("paymentGrid").innerHTML = payments
+                .map((payment) => {
+                    return `
+                        <article class="payment-card ${
+                            payment.accepted ? "accepted" : "unavailable"
+                        }">
+                            <span class="payment-icon">${payment.icon}</span>
+
+                            <div>
+                                <strong>${payment.name}</strong>
+
+                                <small>
+                                    ${
+                                        payment.accepted
+                                            ? currentLanguage === "zh"
+                                                ? "接受付款"
+                                                : "Accepted"
+                                            : currentLanguage === "zh"
+                                                ? "暫不接受"
+                                                : "Not Accepted"
+                                    }
+                                </small>
+                            </div>
+
+                            <i>${payment.accepted ? "✓" : "×"}</i>
+                        </article>
+                    `;
+                })
+                .join("");
+        }
+
+        function renderProcess() {
+            document.getElementById("processTimeline").innerHTML =
+                processSteps
+                    .map((step, index) => {
+                        return `
+                            <article class="process-step ${
+                                index % 2 === 0 ? "left-step" : "right-step"
+                            } ${
+                                step.featured ? "featured-step" : ""
+                            } ${
+                                step.completed ? "completed-step" : ""
+                            } scroll-reveal">
+
+                                <div class="process-card">
+                                    <span class="process-number">
+                                        ${String(index + 1).padStart(2, "0")}
+                                    </span>
+
+                                    <span class="process-icon">${step.icon}</span>
+
+                                    <small>
+                                        ${
+                                            currentLanguage === "zh"
+                                                ? "步驟 " + (index + 1)
+                                                : "Step " + (index + 1)
+                                        }
+                                    </small>
+
+                                    <h3>
+                                        ${
+                                            currentLanguage === "zh"
+                                                ? step.zhTitle
+                                                : step.enTitle
+                                        }
+                                    </h3>
+
+                                    <p>
+                                        ${
+                                            currentLanguage === "zh"
+                                                ? step.zhText
+                                                : step.enText
+                                        }
+                                    </p>
+                                </div>
+
+                                <span class="process-dot"></span>
+                            </article>
+                        `;
+                    })
+                    .join("");
+        }
+
+        function bindCalculator() {
+            document.querySelectorAll(".stepper button").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const input =
+                        document.getElementById(button.dataset.input);
+
+                    const step = Number(input.step) || 1;
+                    let value = Number(input.value) || 0;
+
+                    value +=
+                        button.dataset.action === "plus"
+                            ? step
+                            : -step;
+
+                    input.value = value;
+                    clampInput(input);
+                    updateCalculator();
+                });
             });
-        });
+
+            document.querySelectorAll(".stepper input").forEach((input) => {
+                input.addEventListener("input", updateCalculator);
+
+                input.addEventListener("blur", () => {
+                    clampInput(input);
+                    updateCalculator();
+                });
+            });
+        }
 
         function clampInput(input) {
             let value = Number(input.value);
@@ -1916,158 +1578,119 @@
             input.value = value;
         }
 
-        function getValues() {
-            return {
-                shortQuantity: Math.max(0, Number(inputs.shortQuantity.value) || 0),
-                shortDuration: Math.max(1, Number(inputs.shortDuration.value) || 1),
-                reelsQuantity: Math.max(0, Number(inputs.reelsQuantity.value) || 0),
-                reelsDuration: Math.max(0.5, Number(inputs.reelsDuration.value) || 0.5),
-                longQuantity: Math.max(0, Number(inputs.longQuantity.value) || 0),
-                longDuration: Math.max(1, Number(inputs.longDuration.value) || 1)
-            };
-        }
-
         function calculate() {
-            const values = getValues();
-
-            const shortMYR =
-                values.shortQuantity *
-                values.shortDuration *
-                1;
-
-            const reelsMYR =
-                values.reelsQuantity *
-                values.reelsDuration *
-                45;
-
-            const longMYR =
-                values.longQuantity *
-                values.longDuration *
-                40;
-
-            return {
-                values,
-                shortMYR,
-                reelsMYR,
-                longMYR,
-                totalMYR: shortMYR + reelsMYR + longMYR
+            const result = {
+                totalMYR: 0,
+                items: []
             };
-        }
 
-        function convert(myrAmount) {
-            return myrAmount * currencies[selectedCurrency].rate;
-        }
+            services.forEach((service) => {
+                const quantity = Math.max(
+                    0,
+                    Number(
+                        document.getElementById(
+                            service.id + "Quantity"
+                        ).value
+                    ) || 0
+                );
 
-        function formatRaw(value, decimals) {
-            return Number(value).toLocaleString("en-MY", {
-                minimumFractionDigits: decimals,
-                maximumFractionDigits: decimals
+                const duration = Math.max(
+                    service.durationMin,
+                    Number(
+                        document.getElementById(
+                            service.id + "Duration"
+                        ).value
+                    ) || service.durationDefault
+                );
+
+                const subtotal =
+                    quantity *
+                    duration *
+                    service.unitRate;
+
+                result.totalMYR += subtotal;
+
+                result.items.push({
+                    service,
+                    quantity,
+                    duration,
+                    subtotal
+                });
             });
-        }
 
-        function formatMoney(myrAmount) {
-            const currency = currencies[selectedCurrency];
-            const converted = convert(myrAmount);
-
-            return (
-                currency.symbol +
-                formatRaw(converted, currency.decimals)
-            );
+            return result;
         }
 
         function updateCalculator(animate = true) {
             const result = calculate();
-            const values = result.values;
 
-            document.getElementById("shortRate").textContent =
-                formatMoney(30);
+            result.items.forEach((item) => {
+                const durationUnit =
+                    item.service.id === "short"
+                        ? currentLanguage === "zh"
+                            ? "秒"
+                            : "sec"
+                        : currentLanguage === "zh"
+                            ? "分鐘"
+                            : "min";
 
-            document.getElementById("reelsRate").textContent =
-                formatMoney(45);
+                const quantityUnit =
+                    currentLanguage === "zh"
+                        ? "支"
+                        : "videos";
 
-            document.getElementById("longRate").textContent =
-                formatMoney(40);
+                document.getElementById(
+                    item.service.id + "Calculation"
+                ).textContent =
+                    `${item.quantity} ${quantityUnit} × ${item.duration} ${durationUnit}`;
 
-            document.getElementById("shortCalculation").textContent =
-                currentLanguage === "zh"
-                    ? values.shortQuantity +
-                      " 支 × " +
-                      values.shortDuration +
-                      " 秒"
-                    : values.shortQuantity +
-                      " videos × " +
-                      values.shortDuration +
-                      " sec";
+                document.getElementById(
+                    item.service.id + "Subtotal"
+                ).textContent =
+                    formatMoney(item.subtotal);
 
-            document.getElementById("reelsCalculation").textContent =
-                currentLanguage === "zh"
-                    ? values.reelsQuantity +
-                      " 支 × " +
-                      values.reelsDuration +
-                      " 分钟"
-                    : values.reelsQuantity +
-                      " videos × " +
-                      values.reelsDuration +
-                      " min";
+                document.getElementById(
+                    item.service.id + "CardTotal"
+                ).textContent =
+                    formatMoney(item.subtotal);
 
-            document.getElementById("longCalculation").textContent =
-                currentLanguage === "zh"
-                    ? values.longQuantity +
-                      " 支 × " +
-                      values.longDuration +
-                      " 分钟"
-                    : values.longQuantity +
-                      " videos × " +
-                      values.longDuration +
-                      " min";
+                document.getElementById(
+                    item.service.id + "Rate"
+                ).textContent =
+                    formatMoney(item.service.displayRate);
 
-            const shortMoney = formatMoney(result.shortMYR);
-            const reelsMoney = formatMoney(result.reelsMYR);
-            const longMoney = formatMoney(result.longMYR);
-
-            document.getElementById("shortSubtotal").textContent = shortMoney;
-            document.getElementById("reelsSubtotal").textContent = reelsMoney;
-            document.getElementById("longSubtotal").textContent = longMoney;
-
-            document.getElementById("shortCardTotal").textContent = shortMoney;
-            document.getElementById("reelsCardTotal").textContent = reelsMoney;
-            document.getElementById("longCardTotal").textContent = longMoney;
-
-            toggleSelected("shortQuote", values.shortQuantity > 0);
-            toggleSelected("reelsQuote", values.reelsQuantity > 0);
-            toggleSelected("longQuote", values.longQuantity > 0);
+                document
+                    .getElementById(item.service.id + "Quote")
+                    .classList.toggle(
+                        "selected",
+                        item.quantity > 0
+                    );
+            });
 
             if (animate) {
                 animateTotal(result.totalMYR);
             } else {
-                displayedTotal = result.totalMYR;
+                displayedMYRTotal = result.totalMYR;
 
-                totalPriceElement.textContent =
+                document.getElementById("totalPrice").textContent =
                     formatMoney(result.totalMYR);
 
-                mobileTotalPrice.textContent =
+                document.getElementById("mobileTotalPrice").textContent =
                     formatMoney(result.totalMYR);
             }
 
-            updateSummary(result);
-            updateEmailLink();
+            updateQuoteSummary(result);
+            updateEmail();
         }
 
-        function toggleSelected(id, selected) {
-            document
-                .getElementById(id)
-                .classList.toggle("selected", selected);
-        }
-
-        function animateTotal(newMYRTotal) {
-            const previousMYRTotal = displayedTotal;
-            const difference = newMYRTotal - previousMYRTotal;
+        function animateTotal(newTotal) {
+            const oldTotal = displayedMYRTotal;
+            const difference = newTotal - oldTotal;
             const startTime = performance.now();
-            const duration = 280;
 
-            function animation(time) {
+            function animation(currentTime) {
                 const progress = Math.min(
-                    (time - startTime) / duration,
+                    (currentTime - startTime) / 280,
                     1
                 );
 
@@ -2075,252 +1698,186 @@
                     1 - Math.pow(1 - progress, 3);
 
                 const current =
-                    previousMYRTotal +
+                    oldTotal +
                     difference * eased;
 
-                totalPriceElement.textContent = formatMoney(current);
-                mobileTotalPrice.textContent = formatMoney(current);
+                document.getElementById("totalPrice").textContent =
+                    formatMoney(current);
+
+                document.getElementById("mobileTotalPrice").textContent =
+                    formatMoney(current);
 
                 if (progress < 1) {
                     requestAnimationFrame(animation);
                 } else {
-                    displayedTotal = newMYRTotal;
+                    displayedMYRTotal = newTotal;
                 }
             }
 
             requestAnimationFrame(animation);
         }
 
-        function updateSummary(result) {
-            const values = result.values;
-            const summaries = [];
+        function updateQuoteSummary(result) {
+            const selectedItems =
+                result.items.filter((item) => item.quantity > 0);
 
-            if (values.shortQuantity > 0) {
-                summaries.push(
-                    currentLanguage === "zh"
-                        ? "短影音 " +
-                          values.shortQuantity +
-                          " 支・每支 " +
-                          values.shortDuration +
-                          " 秒"
-                        : values.shortQuantity +
-                          " shorts・" +
-                          values.shortDuration +
-                          " sec each"
-                );
-            }
+            const summary =
+                document.getElementById("quoteSummary");
 
-            if (values.reelsQuantity > 0) {
-                summaries.push(
-                    currentLanguage === "zh"
-                        ? "Reels " +
-                          values.reelsQuantity +
-                          " 支・每支 " +
-                          values.reelsDuration +
-                          " 分钟"
-                        : values.reelsQuantity +
-                          " Reels・" +
-                          values.reelsDuration +
-                          " min each"
-                );
-            }
-
-            if (values.longQuantity > 0) {
-                summaries.push(
-                    currentLanguage === "zh"
-                        ? "长精华 " +
-                          values.longQuantity +
-                          " 支・每支 " +
-                          values.longDuration +
-                          " 分钟"
-                        : values.longQuantity +
-                          " highlights・" +
-                          values.longDuration +
-                          " min each"
-                );
-            }
-
-            if (summaries.length === 0) {
-                quoteSummary.innerHTML =
-                    "<span>" +
-                    (currentLanguage === "zh"
-                        ? "尚未选择服务"
-                        : "No services selected") +
-                    "</span>";
+            if (selectedItems.length === 0) {
+                summary.innerHTML =
+                    `<span>${
+                        currentLanguage === "zh"
+                            ? "尚未選擇服務"
+                            : "No services selected"
+                    }</span>`;
 
                 return;
             }
 
-            quoteSummary.innerHTML = summaries
-                .map((summary) => "<span>" + summary + "</span>")
+            summary.innerHTML = selectedItems
+                .map((item) => {
+                    return `
+                        <span>
+                            ${item.service[currentLanguage]}
+                            × ${item.quantity}
+                        </span>
+                    `;
+                })
                 .join("");
+        }
+
+        function updateExchangeText() {
+            const currency = currencies[selectedCurrency];
+
+            document.getElementById("currencyName").textContent =
+                selectedCurrency +
+                " · " +
+                currency[currentLanguage];
+
+            if (selectedCurrency === "MYR") {
+                document.getElementById("exchangeRateText").textContent =
+                    currentLanguage === "zh"
+                        ? "主要價格與最終結算均以馬幣 MYR 為準"
+                        : "Base prices and final payment are calculated in MYR";
+            } else {
+                document.getElementById("exchangeRateText").textContent =
+                    currentLanguage === "zh"
+                        ? `參考匯率：RM1 ≈ ${currency.symbol}${currency.rate}｜最終以 MYR 結算`
+                        : `Reference rate: RM1 ≈ ${currency.symbol}${currency.rate} | Final payment in MYR`;
+            }
         }
 
         function getQuoteText() {
             const result = calculate();
-            const values = result.values;
-            const currency = currencies[selectedCurrency];
+
+            const details = result.items
+                .map((item) => {
+                    return (
+                        item.service[currentLanguage] +
+                        "：" +
+                        item.quantity +
+                        " × " +
+                        item.duration +
+                        " = " +
+                        formatMoney(item.subtotal)
+                    );
+                })
+                .join("\n");
 
             if (currentLanguage === "zh") {
                 return (
-                    "崴西西 WAICC 影片剪辑预估报价\n\n" +
-                    "显示货币：" +
-                    selectedCurrency +
-                    "（" +
-                    currency.zh +
-                    "）\n\n" +
-                    "30 秒短影音：\n" +
-                    values.shortQuantity +
-                    " 支 × 每支 " +
-                    values.shortDuration +
-                    " 秒\n" +
-                    "小计：" +
-                    formatMoney(result.shortMYR) +
-                    "\n\n" +
-                    "Reels 短影音：\n" +
-                    values.reelsQuantity +
-                    " 支 × 每支 " +
-                    values.reelsDuration +
-                    " 分钟\n" +
-                    "小计：" +
-                    formatMoney(result.reelsMYR) +
-                    "\n\n" +
-                    "长影片精华：\n" +
-                    values.longQuantity +
-                    " 支 × 每支 " +
-                    values.longDuration +
-                    " 分钟\n" +
-                    "小计：" +
-                    formatMoney(result.longMYR) +
-                    "\n\n" +
-                    "预估总价：" +
+                    "崴西西 WAICC 影片剪輯預估報價\n\n" +
+                    details +
+                    "\n\n預估總價：" +
                     formatMoney(result.totalMYR) +
-                    "\n" +
-                    "MYR 基础总价：RM" +
+                    "\nMYR 基礎總價：RM" +
                     result.totalMYR.toFixed(2) +
-                    "\n\n" +
-                    "付款方式：Public Bank、AmBank、支付宝、PayPal、Boost。\n" +
-                    "暂不接受 Touch ’n Go eWallet。\n\n" +
-                    "其他货币仅供参考，最终以 MYR 结算。"
+                    "\n\n付款方式：Public Bank、AmBank、支付寶、PayPal、Boost。" +
+                    "\nTouch ’n Go eWallet 暫不接受。" +
+                    "\n\n其他貨幣僅供參考，最終以 MYR 結算。"
                 );
             }
 
             return (
                 "WAICC Video Editing Estimate\n\n" +
-                "Display currency: " +
-                selectedCurrency +
-                " (" +
-                currency.en +
-                ")\n\n" +
-                "30-sec Shorts:\n" +
-                values.shortQuantity +
-                " videos × " +
-                values.shortDuration +
-                " sec each\n" +
-                "Subtotal: " +
-                formatMoney(result.shortMYR) +
-                "\n\n" +
-                "Reels:\n" +
-                values.reelsQuantity +
-                " videos × " +
-                values.reelsDuration +
-                " min each\n" +
-                "Subtotal: " +
-                formatMoney(result.reelsMYR) +
-                "\n\n" +
-                "Long Highlights:\n" +
-                values.longQuantity +
-                " videos × " +
-                values.longDuration +
-                " min each\n" +
-                "Subtotal: " +
-                formatMoney(result.longMYR) +
-                "\n\n" +
-                "Estimated Total: " +
+                details +
+                "\n\nEstimated Total: " +
                 formatMoney(result.totalMYR) +
-                "\n" +
-                "MYR Base Total: RM" +
+                "\nMYR Base Total: RM" +
                 result.totalMYR.toFixed(2) +
-                "\n\n" +
-                "Accepted: Public Bank, AmBank, Alipay, PayPal and Boost.\n" +
-                "Touch ’n Go eWallet is not accepted.\n\n" +
-                "Currency conversion is for reference only. Final payment is in MYR."
+                "\n\nAccepted: Public Bank, AmBank, Alipay, PayPal and Boost." +
+                "\nTouch ’n Go eWallet is not accepted." +
+                "\n\nCurrency conversion is for reference only."
             );
         }
 
-        /* 清除 */
-        resetButton.addEventListener("click", () => {
-            inputs.shortQuantity.value = 0;
-            inputs.shortDuration.value = 30;
-
-            inputs.reelsQuantity.value = 0;
-            inputs.reelsDuration.value = 1;
-
-            inputs.longQuantity.value = 0;
-            inputs.longDuration.value = 1;
-
-            updateCalculator();
-        });
-
-        /* 复制 */
-        copyButton.addEventListener("click", async () => {
-            try {
-                await navigator.clipboard.writeText(getQuoteText());
-
-                copyIcon.textContent = "✓";
-
-                copyText.textContent =
-                    currentLanguage === "zh"
-                        ? "已复制报价"
-                        : "Quote Copied";
-
-                copyButton.classList.add("copied");
-
-                setTimeout(() => {
-                    copyIcon.textContent = "⧉";
-
-                    copyText.textContent =
-                        currentLanguage === "zh"
-                            ? "复制报价内容"
-                            : "Copy Quote";
-
-                    copyButton.classList.remove("copied");
-                }, 1700);
-            } catch (error) {
-                copyText.textContent =
-                    currentLanguage === "zh"
-                        ? "复制失败"
-                        : "Copy Failed";
-            }
-        });
-
-        function updateEmailLink() {
+        function updateEmail() {
             const subject =
                 currentLanguage === "zh"
-                    ? "影片剪辑委托询问"
+                    ? "影片剪輯委託詢問"
                     : "Video Editing Commission";
 
-            const extra =
-                currentLanguage === "zh"
-                    ? "\n\n我的其他要求："
-                    : "\n\nAdditional requirements:";
-
-            emailButton.href =
+            document.getElementById("emailButton").href =
                 "mailto:whyccz@gmail.com?subject=" +
                 encodeURIComponent(subject) +
                 "&body=" +
-                encodeURIComponent(getQuoteText() + extra);
+                encodeURIComponent(
+                    getQuoteText() +
+                    (
+                        currentLanguage === "zh"
+                            ? "\n\n我的其他需求："
+                            : "\n\nAdditional requirements:"
+                    )
+                );
         }
 
-        /* 手机浮动总价 */
-        mobileQuoteBar.addEventListener("click", () => {
-            document.getElementById("quotePanel").scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        });
+        function renderDynamicContent() {
+            renderVideos();
+            renderShorts();
+            renderServices();
+            renderPayments();
+            renderProcess();
+            observeReveals();
+            updateCalculator(false);
+        }
 
-        /* 滚动出现 */
+        function updateLanguage() {
+            document.documentElement.lang =
+                currentLanguage === "zh"
+                    ? "zh-Hant"
+                    : "en";
+
+            document.querySelectorAll(".lang").forEach((element) => {
+                const content =
+                    element.dataset[currentLanguage];
+
+                if (content) {
+                    element.innerHTML = content;
+                }
+            });
+
+            document.getElementById("copyText").textContent =
+                currentLanguage === "zh"
+                    ? "複製報價內容"
+                    : "Copy Quote";
+
+            renderDynamicContent();
+            updateExchangeText();
+
+            const activeVideo =
+                document.querySelector(".video-item.active");
+
+            if (activeVideo) {
+                const index =
+                    Number(activeVideo.dataset.index);
+
+                document.getElementById("featuredTitle").textContent =
+                    videos[index][currentLanguage];
+            }
+        }
+
+        /* 滾動動畫 */
         const revealObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -2330,49 +1887,187 @@
                 });
             },
             {
-                threshold: 0.12
+                threshold: 0.1
             }
         );
 
-        document.querySelectorAll(".scroll-reveal").forEach((element) => {
-            revealObserver.observe(element);
-        });
-
-        /* 导航当前区域 */
-        const sectionObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (!entry.isIntersecting) {
-                        return;
-                    }
-
-                    document.querySelectorAll(".nav-link").forEach((link) => {
-                        link.classList.remove("active");
-
-                        if (
-                            link.getAttribute("href") ===
-                            "#" + entry.target.id
-                        ) {
-                            link.classList.add("active");
-                        }
-                    });
+        function observeReveals() {
+            document
+                .querySelectorAll(
+                    ".scroll-reveal:not([data-observed])"
+                )
+                .forEach((element) => {
+                    element.dataset.observed = "true";
+                    revealObserver.observe(element);
                 });
-            },
-            {
-                rootMargin: "-35% 0px -55% 0px"
-            }
-        );
+        }
 
-        document.querySelectorAll(".observed-section").forEach((section) => {
-            sectionObserver.observe(section);
+        /* 開場 */
+        window.addEventListener("load", () => {
+            let progress = 0;
+
+            const interval = setInterval(() => {
+                progress +=
+                    Math.floor(Math.random() * 11) + 4;
+
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+
+                    setTimeout(() => {
+                        loader.classList.add("finished");
+
+                        setTimeout(() => {
+                            doorTransition.classList.add("open");
+                            document.body.classList.add("page-ready");
+
+                            setTimeout(() => {
+                                loader.style.display = "none";
+                                doorTransition.style.display = "none";
+                            }, 1100);
+                        }, 250);
+                    }, 250);
+                }
+
+                loadingNumber.textContent = progress + "%";
+            }, 80);
         });
 
-        /* 导航背景 */
+        /* 手機選單 */
+        menuButton.addEventListener("click", () => {
+            const opened =
+                navigation.classList.toggle("open");
+
+            menuButton.classList.toggle("open", opened);
+            document.body.classList.toggle("menu-open", opened);
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                String(opened)
+            );
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+                navigation.classList.remove("open");
+                menuButton.classList.remove("open");
+                document.body.classList.remove("menu-open");
+            });
+        });
+
+        /* 語言切換 */
+        document
+            .getElementById("languageButton")
+            .addEventListener("click", () => {
+                const nextLanguage =
+                    currentLanguage === "zh"
+                        ? "en"
+                        : "zh";
+
+                document.getElementById(
+                    "languageTransitionTitle"
+                ).textContent =
+                    nextLanguage === "en"
+                        ? "ENGLISH"
+                        : "繁體中文";
+
+                document.getElementById(
+                    "languageTransitionText"
+                ).textContent =
+                    nextLanguage === "en"
+                        ? "Switching language"
+                        : "正在切換語言";
+
+                languageTransition.classList.add("active");
+
+                setTimeout(() => {
+                    currentLanguage = nextLanguage;
+                    updateLanguage();
+                }, 420);
+
+                setTimeout(() => {
+                    languageTransition.classList.remove("active");
+                }, 1200);
+            });
+
+        /* 貨幣 */
+        currencySelect.addEventListener("change", () => {
+            selectedCurrency = currencySelect.value;
+            updateExchangeText();
+            updateCalculator(false);
+        });
+
+        /* 清除 */
+        document
+            .getElementById("resetButton")
+            .addEventListener("click", () => {
+                services.forEach((service) => {
+                    document.getElementById(
+                        service.id + "Quantity"
+                    ).value = 0;
+
+                    document.getElementById(
+                        service.id + "Duration"
+                    ).value =
+                        service.durationDefault;
+                });
+
+                updateCalculator();
+            });
+
+        /* 複製 */
+        document
+            .getElementById("copyButton")
+            .addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(
+                        getQuoteText()
+                    );
+
+                    document.getElementById("copyIcon").textContent = "✓";
+
+                    document.getElementById("copyText").textContent =
+                        currentLanguage === "zh"
+                            ? "已複製報價"
+                            : "Quote Copied";
+
+                    setTimeout(() => {
+                        document.getElementById("copyIcon").textContent = "⧉";
+
+                        document.getElementById("copyText").textContent =
+                            currentLanguage === "zh"
+                                ? "複製報價內容"
+                                : "Copy Quote";
+                    }, 1700);
+                } catch {
+                    document.getElementById("copyText").textContent =
+                        currentLanguage === "zh"
+                            ? "複製失敗"
+                            : "Copy Failed";
+                }
+            });
+
+        /* 手機報價 */
+        document
+            .getElementById("mobileQuoteBar")
+            .addEventListener("click", () => {
+                document.getElementById("quotePanel").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+
+        /* 導航背景 */
         window.addEventListener("scroll", () => {
-            navbar.classList.toggle("scrolled", window.scrollY > 50);
+            document
+                .getElementById("navbar")
+                .classList.toggle(
+                    "scrolled",
+                    window.scrollY > 50
+                );
         });
 
-        /* 滑鼠互动 */
+        /* 滑鼠 */
         const cursorDot = document.getElementById("cursorDot");
         const cursorOutline = document.getElementById("cursorOutline");
         const cursorGlow = document.getElementById("cursorGlow");
@@ -2389,7 +2084,7 @@
             mouseY = event.clientY;
 
             cursorDot.style.transform =
-                "translate(" + mouseX + "px, " + mouseY + "px)";
+                `translate(${mouseX}px, ${mouseY}px)`;
         });
 
         function animateCursor() {
@@ -2400,32 +2095,22 @@
             glowY += (mouseY - glowY) * 0.07;
 
             cursorOutline.style.transform =
-                "translate(" + outlineX + "px, " + outlineY + "px)";
+                `translate(${outlineX}px, ${outlineY}px)`;
 
             cursorGlow.style.transform =
-                "translate(" + glowX + "px, " + glowY + "px)";
+                `translate(${glowX}px, ${glowY}px)`;
 
             requestAnimationFrame(animateCursor);
         }
 
         animateCursor();
 
-        document.querySelectorAll("a, button, input, select").forEach((element) => {
-            element.addEventListener("mouseenter", () => {
-                document.body.classList.add("cursor-hover");
-            });
-
-            element.addEventListener("mouseleave", () => {
-                document.body.classList.remove("cursor-hover");
-            });
-        });
-
-        /* 首页视差只在电脑启用 */
+        /* 首頁視差 */
         const hero = document.querySelector(".hero");
         const heroVisual = document.getElementById("heroVisual");
 
         hero.addEventListener("mousemove", (event) => {
-            if (window.innerWidth < 1024) {
+            if (window.innerWidth < 1100) {
                 return;
             }
 
@@ -2436,19 +2121,15 @@
                 event.clientY / window.innerHeight - 0.5;
 
             heroVisual.style.transform =
-                "translate(" +
-                x * 22 +
-                "px, " +
-                y * 18 +
-                "px)";
+                `translate(${x * 22}px, ${y * 18}px)`;
         });
 
         hero.addEventListener("mouseleave", () => {
             heroVisual.style.transform = "translate(0, 0)";
         });
 
+        renderDynamicContent();
         updateExchangeText();
-        updateCalculator(false);
     </script>
 </body>
 </html>
